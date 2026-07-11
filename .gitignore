@@ -1,0 +1,34 @@
+# ---- build artifacts ----
+build/
+cmake-build-*/
+*.o
+*.obj
+*.a
+*.so
+*.exe
+
+# the compiled program (binaries don't belong in source control)
+resit_adc
+resit_adc_asan
+*.out
+
+# ---- CMake ----
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+
+# ---- editor / IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ---- generated reports (regenerated on every run) ----
+results.txt
+fault_report.txt
