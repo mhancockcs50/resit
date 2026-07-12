@@ -5,9 +5,7 @@ set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
 
-# the brief is strict about warnings -- treat them as a first line of defence
-# against the kind of mistakes (integer division, unused results) that bite
-# when parsing binary data.
+
 add_compile_options(-Wall -Wextra -pedantic)
 
 add_executable(resit_adc
