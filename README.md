@@ -27,20 +27,9 @@ CLion is great but heavier and requires a license for full features.
    - CMake Tools
    - CMake Language Support
 
-### 3. Configure CMake
-1. Press `Ctrl+Shift+P` → type **CMake: Select a Kit**
-2. Choose your MSYS2 GCC kit (e.g., GCC for x86_64)
-3. Press `Ctrl+Shift+P` → **CMake: Configure**
+### 3. Build the Project
+- Run gcc -std=c99 -Wall -Wextra -pedantic main.c adc.c io.c stats.c -o resit_adc -lm
 
-### 4. Build the Project
-- Click the **Build** button in the bottom status bar, or
-- Press `Ctrl+Shift+P` → **CMake: Build**
-
-The executable `resit_adc.exe` will appear in the build folder.
-
-### 5. Run the Program
-1. Place your `adc_sensor_log.bin` file in the project root or any folder.
-2. Open the integrated terminal (`Ctrl+``)
-3. Run:
-   ```bash
-   ./build/resit_adc adc_sensor_log.bin
+### 4. Run the Program
+1. Run:
+   .\resit_adc.exe .\adc_sensor_log.bin
